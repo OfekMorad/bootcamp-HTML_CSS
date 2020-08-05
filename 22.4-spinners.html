@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <meta content="spinners | animation | rotate | infinite">
+  <title>22.4-Spinners | animation | rotate | infinite</title>
+  <style>
+    body {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        background-color: #333;
+    }
+    .load-1 {
+        border: 5px solid grey;
+        border-top: 5px solid orange;
+    }
+    .load-2 {
+        border: 5px solid hack;
+        border-top: 5px solid red;
+    }
+    .circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: transparent;
+        animation-name: loading;
+        animation-duration: 0.8s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes loading {
+        to {transform: rotate(360deg);}
+    }
+    .load-4, .load-3 {
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .dot {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+    }
+    .load-3 > .dot {
+        animation-name: changecolor;
+        animation-fill-mode: ease-in-out;
+        background-color: transparent;
+    }
+    .load-4 > .dot {
+        background-color: goldenrod;
+        animation-name: bounce;
+        animation-direction: alternate;
+        animation-fill-mode: linear;
+    }
+    .delay-1 {
+        animation-delay: 0.2s;
+    }
+    .delay-2 {
+        animation-delay: 0.4s;
+    }
+    @keyframes changecolor {
+        100% {background-color: pink;}
+    }
+    @keyframes bounce {
+        50% {transform: translateY(0px);}
+        100% {transform: translateY(-20px);}
+    }
+  </style>
+</head>
+<body>
+  <div class="load-1 circle"></div>
+  <div class="load-2 circle"></div>
+  <div class="load-3">
+    <div class="dot delay-none"></div>
+    <div class="dot delay-1"></div>
+    <div class="dot delay-2"></div>
+  </div>
+  <div class="load-4">
+    <div class="dot delay-none"></div>
+    <div class="dot delay-1"></div>
+    <div class="dot delay-2"></div>
+  </div>
+</body>
+</html>

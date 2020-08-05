@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>5.1-Forms</title>
+</head>
+<body>
+  <div id="main-header">
+    <h1>Create an Account</h1>
+  </div>
+  <form action="inputSource.php">
+    <div>
+      <label for="Email">Email:</label><br>
+      <input type="email" id="Email" name="Email">
+    </div><br>
+    <div>
+      <label for="Password">Password:</label><br>
+      <input type="password" id="Password" name="Password">
+    </div><br>
+    <div>
+      <label for="Age">Age:</label><br>
+      <select id="Age" name="Age">
+        <option value="-1" selected>Select Age</option>
+        <option value="0-12">0-12</option>
+        <option value="13-18">13-18</option>
+        <option value="19-30">19-30</option>
+        <option value="31-45">31-45</option>
+        <option value="46-65">46-65</option>
+        <option value="+65">+65</option>
+      </select>
+    </div><br>
+    <div>
+      <label for="TellUs">Tell us a little about yourself:</label><br>
+      <textarea name="TellUs" id="TellUs" cols="50" rows="5"></textarea>
+    </div><br>
+    <div>
+      <input type="checkbox" name="agreeBox">
+      <label for="agree">I agree to the <a href="#">terms of service</a></label>
+    </div><br>
+    <div>
+      <input type="submit" value="Sign up">
+      <!-- 2nd option: <button type="submit">Sign up</button> -->
+    </div>
+  </form>
+</body>
+</html>

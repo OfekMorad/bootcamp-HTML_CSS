@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13.1-Responsive_text</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        /*smartphone*/
+        @media(max-width: 500px) {
+            body {
+                background-color: red;
+                font-size: 10px;
+            }
+        }
+        /*tablet*/
+        @media(min-width: 501px) and (max-width: 768px) {
+            body {
+                background-color: blue;
+                font-size: 16px;
+            }
+        }
+        /*wide screen*/
+        @media(min-width: 769px) and (max-width: 1201px) {
+            body {
+                background-color: black;
+                font-size: 22px;
+            }
+        }
+        @media(min-width: 1202px) {
+            body {
+                background-color: yellow;
+                color: black;
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic ipsum, totam, deleniti sit ducimus corrupti eaque, iure perferendis facilis praesentium possimus maxime ratione. Expedita eaque molestias accusantium, accusamus perspiciatis maiores.
+    </main>
+</body>
+</html>

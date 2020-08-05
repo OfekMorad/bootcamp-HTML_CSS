@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10.2-positioning</title>
+  <style>
+  #outer {
+    width: 100px;
+    height: 100px;
+    background: darkcyan;
+    margin: 50px;
+    /* position: relative; */
+    }
+  .space {
+    position: relative;
+  }
+  #inner {
+    width: 50px;
+    height: 50px;
+    background: lightgreen;
+    position: absolute;
+    top: 10px;
+    }
+  body {
+    font-size: 20px;
+  }
+  </style>
+</head>
+<body>
+  <div id="outer">
+    Box title
+    <div class="space">
+      <div id="inner"></div>
+    </div>
+  </div>
+ </body>
+</html>

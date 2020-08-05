@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>21.1 - Transitions</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        min-height: 100vh;
+        background-color: #333;
+        text-align: center;
+    }
+    a {    
+        width: 1rem;
+        height: 1rem;
+        padding: 2rem 5rem;
+        border: solid black 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-delay: 1s;
+    }
+    .box:hover {
+        background: red;
+        border-radius: 50%;
+        color: green;
+        height: 2000px;
+        width: 2000px;
+    }
+    @keyframes TranslateY {
+
+    }
+</style>
+
+<body>
+  <a class="btn TranslateY" href='#'>TranslateY</a>
+</body>
+
+</html>

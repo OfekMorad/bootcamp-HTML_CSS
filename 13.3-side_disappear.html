@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8.1-float_layout</title>
+  <style>
+    .container {
+      text-align: center;
+      max-width: 500px;
+      padding: 50px;
+      border: solid 1px #000;
+      margin: auto;
+    }
+    header {
+      background-color: orange;
+      border: solid 1px #000;
+      margin: 1px 0px;
+      padding: 5px;
+      text-align: center;
+    }
+    .side {
+      background-color: green;
+      border: solid 1px #000;
+      width: 30%;
+      height: 200px;
+      margin: 3px 0px;
+      padding: 10px;
+      text-align: left;
+      float: left;
+    }
+    main {
+      background-color: purple;
+      border: solid 1px #000;
+      width: 60%;
+      height: 200px;
+      margin: 3px 0px;
+      padding: 10px;
+      text-align: right;
+      float: right;
+    }
+    footer {
+      clear: both;
+      background-color: #3566FD;
+      border: solid 1px #000;
+      margin: 1px 0px;
+      padding: 5px;
+      text-align: center;
+    }
+    @media media and (max-width: 320px) {
+        .side {
+          display: none;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      Header
+    </header>
+    <section class="side">
+      Side
+    </section>
+    <main>
+      Main
+    </main>
+
+    <footer>
+      Footer
+    </footer>
+  </div>
+</body>
+</html>

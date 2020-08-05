@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 9.1-buttons</title>
+  <style>
+    body {
+      background-color: #334660;
+    }
+    button {
+      color: white;
+      padding: 5px 20px;
+    }
+    /* 1 green */
+    .one button {
+      background-color: hsl(150, 100%, 35%);
+      border: 1px solid hsl(150, 100%, 35%);
+    }
+    .one button:hover {
+      background-color: hsl(150, 100%, 25%);
+    }
+    /* 2 red */
+    .two button {
+      background-color: hsl(0, 100%, 56%);
+      border: 1px solid hsl(0, 100%, 56%);
+    }
+    .two button:hover {
+      background-color: hsl(0, 100%, 46%);
+    }
+    /* 3 blue */
+    .three button {
+      background-color: hsl(203, 92%, 46%);
+      border: 1px solid hsl(203, 92%, 46%);
+    }
+    .three button:hover {
+      background-color: hsl(203, 92%, 36%);
+    }
+    /* 4 orange */
+    .four button {
+      background-color: hsl(30, 100%, 48%);
+      border: 1px solid hsl(30, 100%, 48%);
+    }
+    .four button:hover {
+      background-color: hsl(30, 100%, 38%);
+    }
+    /* 5 yellow */
+    .five button {
+      background-color: hsl(50, 98%, 49%);
+      border: 1px solid hsl(50, 98%, 49%);
+    }
+    .five button:hover {
+      background-color: hsl(50, 98%, 39%);
+    }
+    /* 6 grey */
+    .six button {
+      background-color: hsl(191, 7%, 53%);
+      border: 1px solid hsl(191, 7%, 53%);
+    }
+    .six button:hover {
+      background-color: hsl(191, 7%, 43%);
+    }
+    .ghost button {
+      background-color: transparent;
+    }
+    div {
+      display: inline-block;
+      margin: 5px;
+    }
+    .round button {
+      border-radius: 15px;
+    }
+    .big button {
+      font-size: 16px;
+    }
+    .medium button {
+      font-size: 12px;
+    }
+    .small button {
+      font-size: 8px;
+    }
+    button:hover {
+      border-color: transparent;
+    }
+    header {
+      text-align: center;
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="flat">
+      <div class="row one big"><button>Register</button></div>
+      <div class="row two medium"><button>Clear</button></div>
+      <div class="row three small"><button>Submit</button></div>
+    </div>
+    <br>
+    <div class="round">
+      <div class="row four big"><button>Register</button></div>
+      <div class="row five medium"><button>Clear</button></div>
+      <div class="row six small"><button>Submit</button></div>
+    </div>
+    <br>
+    <div class="flat ghost">
+      <div class="row one big"><button>Register</button></div>
+      <div class="row two medium"><button>Clear</button></div>
+      <div class="row three small"><button>Submit</button></div>
+    </div><br>
+    <div class="round ghost">
+      <div class="row four big"><button>Register</button></div>
+      <div class="row five medium"><button>Clear</button></div>
+      <div class="row six small"><button>Submit</button></div>
+    </div>
+  </header>
+</body>
+</html>

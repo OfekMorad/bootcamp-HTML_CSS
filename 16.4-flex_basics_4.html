@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16.4-flex_basics_4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            margin: 50px;
+            width: auto;
+            height: 600px;
+            background-color: #F3F6CB;
+        }
+        .container > div {
+            padding: 5px;
+            height: 150px;
+            width: 150px;
+
+        }
+        .container {
+            display: flex;
+            align-items: left;
+            justify-content: space-around;
+            flex-direction: column;
+            
+        }
+        .one {
+            background-color: #458107;
+        }
+        .two {
+            background-color: #3466FD;
+        }
+        .three {
+            background-color: #E84330;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+    </div>
+</body>
+</html>
