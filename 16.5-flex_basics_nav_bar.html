@@ -5,30 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>16.5-flex_basics_nav_bar</title>
     <style>
-        div {
-            align-items: baseline;
-            padding: 0 10px;
-        }
-        .container {
-            height: 100px;
-            width: auto;
-            margin: 0 20px;
-            background-color: #eee;
-            justify-content: space-between;
+        body {
             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar {
+            border: solid 0.2vw #333;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: chocolate;
+        }
+        /* Mobile screen*/
+        @media only screen and (max-width: 499px) {
+            .navbar {
+                background-color: #eee;
+                height: 95vw;
+                width: 95vw;
+                font-size: 4.5vw;
+            }
+            .navbar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+            }
+            .navbar li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .navbar__spcaer {
+                display: none;
+            }
+        }
+        /* Desktop screen */
+        @media only screen and (min-width: 500px) {
+            .navbar {
+                font-size: 1.2vw;
+                height: 6vw;
+                width: 95vw;
+                padding: auto 0;
+                background-color: #eee;
+                justify-content: space-between;
+                display: flex;
+                align-items: baseline;
+            }
+            .navbar__menu ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .navbar__logo, .navbar__menu li {
+                padding: 0 1em;
+            }
+            .navbar__spcaer {
+                flex-grow: 2;
+                /* background-color: coral; */
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="title">
-            <h1>OFEK MORAD</h1>
+    <div class="navbar">
+        <div class="navbar__logo">
+            <a href="#"><h1>OFEK MORAD</h1></a>
         </div>
-        <div class="navbar">
-            <div><h3>HOME</h3></div>
-            <div><h3>ABOUT</h3></div>
-            <div><h3>PORTFOLIO</h3></div>
-            <div><h3>CONTACT</h3></div>
+
+        <div class="navbar__spacer"></div>
+       
+        <div class="navbar__menu">
+            <ul>
+                <li><a href="#"><h3>HOME</h3></a></li>
+                <li><a href="#"><h3>ABOUT</h3></a></li>
+                <li><a href="#"><h3>PORTFOLIO</h3></a></li>
+                <li><a href="#"><h3>CONTACT</h3></a></li>
+            </ul>
         </div>
     </div>
 </body>
